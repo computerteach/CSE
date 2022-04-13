@@ -1,8 +1,7 @@
-totalpoints = int(input("What was the total number of points you earned? "))
-late=input("Was the assignment late?  True or False")
-
-if late == False:
-    print("Great job! your total points are: ", totalpoints)
+totalearned = int(input("What was your grade? (out of 100): "))
+late = input("Was your assignment turned late? (true or false):  ")
+if late == 'false':
+    print("Your assignment was turned in on time, your grade is {totalearned}/100".format(totalearned=totalearned))
 else:
-    lategrade = totalpoints/2
-    print("Sorry but you lose points. Your new total is: ", lategrade)
+    totalearned = totalearned/2
+    print("Your assignment was not turned in on time, your grade is {totalearned}/100".format(totalearned=totalearned))
